@@ -5,20 +5,72 @@
     <title>My Chrome Extension</title>
     <link rel="stylesheet" href="popup.css" />
   </head>
-  <body>
-    <div class="app">
-      <p class="counter-label">Counter</p>
-      <div id="counter" class="counter"></div>
-      <div class="button-container">
-        <button id="decrementBtn" class="button">-</button>
-        <button id="incrementBtn" class="button">+</button>
+  <body class="">
+
+    <!-- ONBOARDING -->
+    <section id="onboarding-section" class="border-b">
+      <div>LOGO HERE</div>
+      <div>TITLE HERE</div>
+      <div>DESCRIPTION HERE</div>
+      <div>
+        <button>CREATE WALLET</button>
+        <button>IMPORT WALLET</button>
       </div>
+    </section>
 
-      <hr class="divider" />
+    <!-- CREATE WALLET -->
+    <section id="create-wallet-section" class="border-b">
+      <header>
+        <button>BACK BUTTON</button>
+      </header>
+      <div>TITLE</div>
+      <div>DESCRIPTION</div>
+      <div>MNEOMONIC PHRASE</div>
+      <div>SAFETY TIP</div>
+      <div>
+        <button>NEXT</button>
+      </div>
+    </section>
 
-      <p class="title">Chrome Extension is Ready!</p>
-      <p class="subtitle">Start by updating <code>popup.html</code></p>
-    </div>
+    <!-- IMPORT WALLET -->
+    <section id="import-wallet-section" class="border-b">
+      <header>
+        <button>BACK BUTTON</button>
+      </header>
+      <div>TITLE</div>
+      <div>DESCRIPTION</div>
+      <div>MNEOMONIC PHRASE TEXTAREA</div>
+      <div>
+        <button>NEXT</button>
+      </div>
+    </section>
+
+    <!-- WALLET -->
+    <section id="wallet">
+      <div class="border-b border-blue-300">
+        <header>
+          <div>WALLET ADDRESS</div>
+          <div>SIGN OUT BUTTON</div>
+        </header>
+        <div>USD BALANCE</div>
+        <div>ALGO BALANCE</div>
+      </div>
+      <div class="border-b border-blue-300">
+        <button>SEND</button>
+        <button>RECEIVE</button>
+      </div>
+      <div>
+        <div>HISTORY LIST TITLE</div>
+        <ul>
+          <li>
+            <div>INCOMING/OUTGOING</div>
+            <div>AMOUNT</div>
+            <div>ADDRESS</div>
+            <div>DATE</div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <script src="popup.js"></script>
 

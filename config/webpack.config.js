@@ -14,6 +14,13 @@ const config = (env, argv) =>
       background: PATHS.src + '/background.js',
     },
     devtool: argv.mode === 'production' ? false : 'source-map',
+    resolve: {
+      fallback: {
+        crypto: require.resolve('crypto-browserify'),
+        stream: require.resolve('stream'),
+        buffer: require.resolve('buffer')
+      }
+    }
   });
 
 module.exports = config;
